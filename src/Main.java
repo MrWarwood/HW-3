@@ -43,10 +43,8 @@ public class Main {
         System.out.println("  Задача 4.");
         byte productivityIn2Minutes = 16;
         System.out.println("Производительность за 2 минуты " + productivityIn2Minutes + " бутылок");
-        int productivityIn1Minutes = productivityIn2Minutes / 2;
-        System.out.println("Производительность за 1 минуты " + productivityIn1Minutes + " бутылок");
-        int prodIn20Min = productivityIn1Minutes * 20;
-        int prodIn24Hours = (prodIn20Min * 3) * 24;
+        int prodIn20Min = productivityIn2Minutes * 10;
+        int prodIn24Hours = prodIn20Min * 3;
         int prodIn3Days = prodIn24Hours * 3;
         int prodIn1Month = prodIn3Days * 10;
         System.out.println("За 20 минут машина произвела " + prodIn20Min + " штук бутылок");
